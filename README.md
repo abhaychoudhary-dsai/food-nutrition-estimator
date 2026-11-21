@@ -2,6 +2,8 @@
 
 Take a photo of your plate. NutriScan recognises the dish with a CNN and shows calories, protein, carbs, fat, fibre, vitamins and minerals for your portion, using the **Indian Nutrient Databank (INDB)**.
 
+**Live demo:** https://nutriscan-food-nutrition.onrender.com (free server, the first visit can take about a minute to wake up)
+
 
 ## Why I built this
 
