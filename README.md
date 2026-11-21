@@ -9,7 +9,20 @@ Calorie apps are built around Western food and packaged labels. For a plate of d
 
 ## Results
 
-> Training runs on Google Colab (GPU). Results are added here after the run in `notebooks/train_food_classifier.ipynb`.
+Dataset: [Indian Food Images](https://huggingface.co/datasets/rajistics/indian_food_images), 20 dishes. 4,795 images for training, 533 for validation, 941 for the test set. Trained on a free Colab T4 GPU; the notebook is saved with its outputs.
+
+| Model | Test accuracy | Top-3 accuracy | Macro F1 |
+| --- | --- | --- | --- |
+| Small CNN, trained from scratch | 0.694 | 0.884 | 0.673 |
+| **EfficientNet-B0, transfer learning** | **0.908** | **0.961** | **0.907** |
+
+Transfer learning wins by a wide margin. With fewer than 5,000 photos, a network that has already learned edges, textures and shapes from ImageNet needs far less data than one that starts from nothing. The small CNN was still improving after 15 epochs, but at about two minutes per epoch it would need many more to catch up.
+
+- The right dish is in the top 3 for 96% of test photos, which is why the app shows three guesses and lets you pick.
+- Best classes: masala dosa (F1 0.97), chai (0.96), burger (0.95). Weakest: kaathi rolls (0.82), samosa (0.85), pav bhaji (0.86). The biggest confusions make sense: 4 samosas were called kaathi rolls (both are brown, folded and fried), and butter naan and chapati were mixed up 7 times.
+- The ONNX export gives the same output as PyTorch (largest difference 0.000008) and the file is 16 MB.
+
+![Confusion matrix](reports/confusion_matrix.png)
 
 ## How it works
 
