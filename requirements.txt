@@ -1,0 +1,7 @@
+# What the web app needs (also used on Render). No PyTorch: the model runs with ONNX Runtime.
+fastapi==0.165.0
+uvicorn==0.54.0
+python-multipart
+onnxruntime==1.29.0
+numpy==2.5.3
+pillow==12.3.0

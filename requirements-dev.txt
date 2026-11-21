@@ -1,0 +1,6 @@
+# Building the nutrition table and running tests
+-r requirements.txt
+pandas
+openpyxl
+pytest
+httpx

@@ -1,0 +1,725 @@
+{
+ "source": "Indian Nutrient Databank (INDB), Jaacks et al. 2024",
+ "nutrients": {
+  "energy_kcal": {
+   "label": "Energy",
+   "unit": "kcal",
+   "group": "main"
+  },
+  "protein_g": {
+   "label": "Protein",
+   "unit": "g",
+   "group": "main"
+  },
+  "carb_g": {
+   "label": "Carbohydrates",
+   "unit": "g",
+   "group": "main"
+  },
+  "fat_g": {
+   "label": "Fat",
+   "unit": "g",
+   "group": "main"
+  },
+  "fibre_g": {
+   "label": "Fibre",
+   "unit": "g",
+   "group": "main"
+  },
+  "freesugar_g": {
+   "label": "Free sugar",
+   "unit": "g",
+   "group": "main"
+  },
+  "calcium_mg": {
+   "label": "Calcium",
+   "unit": "mg",
+   "group": "mineral"
+  },
+  "iron_mg": {
+   "label": "Iron",
+   "unit": "mg",
+   "group": "mineral"
+  },
+  "magnesium_mg": {
+   "label": "Magnesium",
+   "unit": "mg",
+   "group": "mineral"
+  },
+  "phosphorus_mg": {
+   "label": "Phosphorus",
+   "unit": "mg",
+   "group": "mineral"
+  },
+  "potassium_mg": {
+   "label": "Potassium",
+   "unit": "mg",
+   "group": "mineral"
+  },
+  "sodium_mg": {
+   "label": "Sodium",
+   "unit": "mg",
+   "group": "mineral"
+  },
+  "zinc_mg": {
+   "label": "Zinc",
+   "unit": "mg",
+   "group": "mineral"
+  },
+  "vita_ug": {
+   "label": "Vitamin A",
+   "unit": "µg",
+   "group": "vitamin"
+  },
+  "vitb1_mg": {
+   "label": "Vitamin B1 (thiamine)",
+   "unit": "mg",
+   "group": "vitamin"
+  },
+  "vitb2_mg": {
+   "label": "Vitamin B2 (riboflavin)",
+   "unit": "mg",
+   "group": "vitamin"
+  },
+  "vitb3_mg": {
+   "label": "Vitamin B3 (niacin)",
+   "unit": "mg",
+   "group": "vitamin"
+  },
+  "vitb6_mg": {
+   "label": "Vitamin B6",
+   "unit": "mg",
+   "group": "vitamin"
+  },
+  "folate_ug": {
+   "label": "Folate",
+   "unit": "µg",
+   "group": "vitamin"
+  },
+  "vitc_mg": {
+   "label": "Vitamin C",
+   "unit": "mg",
+   "group": "vitamin"
+  },
+  "vite_mg": {
+   "label": "Vitamin E",
+   "unit": "mg",
+   "group": "vitamin"
+  },
+  "vitk1_ug": {
+   "label": "Vitamin K1",
+   "unit": "µg",
+   "group": "vitamin"
+  }
+ },
+ "dishes": {
+  "burger": {
+   "status": "unreliable",
+   "note": "INDB counts all the frying oil in the recipe, so fat and calories are far too high (Vegetable burger: 51 g fat per 100 g). Numbers are hidden.",
+   "indb_recipes": [
+    "Vegetable burger"
+   ],
+   "serving": {
+    "unit": "burger",
+    "grams": 515
+   },
+   "per_100g": {
+    "energy_kcal": 519.931,
+    "protein_g": 3.263,
+    "carb_g": 13.688,
+    "fat_g": 50.631,
+    "fibre_g": 1.698,
+    "freesugar_g": 1.878,
+    "calcium_mg": 26.082,
+    "iron_mg": 0.703,
+    "magnesium_mg": 6.464,
+    "phosphorus_mg": 18.337,
+    "potassium_mg": 90.869,
+    "sodium_mg": 168.972,
+    "zinc_mg": 0.161,
+    "vita_ug": 7.259,
+    "vitb1_mg": 0.032,
+    "vitb2_mg": 0.037,
+    "vitb3_mg": 0.838,
+    "vitb6_mg": 0.041,
+    "folate_ug": 7.95,
+    "vitc_mg": 4.79,
+    "vite_mg": 23.897,
+    "vitk1_ug": 8.163
+   }
+  },
+  "butter_naan": {
+   "status": "ok",
+   "note": "",
+   "indb_recipes": [
+    "Naan"
+   ],
+   "serving": {
+    "unit": "naan",
+    "grams": 53
+   },
+   "per_100g": {
+    "energy_kcal": 286.45,
+    "protein_g": 8.052,
+    "carb_g": 51.754,
+    "fat_g": 4.988,
+    "fibre_g": 1.909,
+    "freesugar_g": 5.586,
+    "calcium_mg": 88.006,
+    "iron_mg": 1.293,
+    "magnesium_mg": 27.527,
+    "phosphorus_mg": 245.772,
+    "potassium_mg": 166.238,
+    "sodium_mg": 326.109,
+    "zinc_mg": 0.797,
+    "vita_ug": 39.975,
+    "vitb1_mg": 0.113,
+    "vitb2_mg": 0.097,
+    "vitb3_mg": 0.568,
+    "vitb6_mg": 0.073,
+    "folate_ug": 14.225,
+    "vitc_mg": 0.434,
+    "vite_mg": 0.195,
+    "vitk1_ug": 1.569
+   }
+  },
+  "chai": {
+   "status": "ok",
+   "note": "",
+   "indb_recipes": [
+    "Hot tea (Garam Chai)"
+   ],
+   "serving": {
+    "unit": "tea cup",
+    "grams": 211
+   },
+   "per_100g": {
+    "energy_kcal": 16.144,
+    "protein_g": 0.388,
+    "carb_g": 2.582,
+    "fat_g": 0.532,
+    "fibre_g": 0.0,
+    "freesugar_g": 2.576,
+    "calcium_mg": 14.204,
+    "iron_mg": 0.022,
+    "magnesium_mg": 1.036,
+    "phosphorus_mg": 11.501,
+    "potassium_mg": 13.945,
+    "sodium_mg": 3.119,
+    "zinc_mg": 0.041,
+    "vita_ug": 0.0,
+    "vitb1_mg": 0.004,
+    "vitb2_mg": 0.013,
+    "vitb3_mg": 0.01,
+    "vitb6_mg": 0.005,
+    "folate_ug": 0.856,
+    "vitc_mg": 0.239,
+    "vite_mg": 0.026,
+    "vitk1_ug": 0.002
+   }
+  },
+  "chapati": {
+   "status": "ok",
+   "note": "",
+   "indb_recipes": [
+    "Chapati/Roti"
+   ],
+   "serving": {
+    "unit": "chapati",
+    "grams": 36
+   },
+   "per_100g": {
+    "energy_kcal": 202.311,
+    "protein_g": 5.875,
+    "carb_g": 35.65,
+    "fat_g": 3.561,
+    "fibre_g": 6.311,
+    "freesugar_g": 1.0,
+    "calcium_mg": 17.217,
+    "iron_mg": 2.278,
+    "magnesium_mg": 69.444,
+    "phosphorus_mg": 175.0,
+    "potassium_mg": 172.778,
+    "sodium_mg": 1.161,
+    "zinc_mg": 1.583,
+    "vita_ug": 25.611,
+    "vitb1_mg": 0.233,
+    "vitb2_mg": 0.083,
+    "vitb3_mg": 1.317,
+    "vitb6_mg": 0.139,
+    "folate_ug": 16.233,
+    "vitc_mg": 0.0,
+    "vite_mg": 0.304,
+    "vitk1_ug": 0.833
+   }
+  },
+  "chole_bhature": {
+   "status": "unreliable",
+   "note": "INDB counts all the frying oil in the recipe, so fat and calories are far too high (Bhatura: 83 g fat per 100 g). Numbers are hidden.",
+   "indb_recipes": [
+    "Chickpeas curry (Safed channa curry)",
+    "Bhatura x2"
+   ],
+   "serving": {
+    "unit": "plate (1 bowl chole + 2 bhature)",
+    "grams": 411
+   },
+   "per_100g": {
+    "energy_kcal": 609.471,
+    "protein_g": 2.934,
+    "carb_g": 13.431,
+    "fat_g": 60.473,
+    "fibre_g": 1.649,
+    "freesugar_g": 1.888,
+    "calcium_mg": 17.511,
+    "iron_mg": 0.763,
+    "magnesium_mg": 13.703,
+    "phosphorus_mg": 52.085,
+    "potassium_mg": 118.825,
+    "sodium_mg": 124.486,
+    "zinc_mg": 0.365,
+    "vita_ug": 0.681,
+    "vitb1_mg": 0.06,
+    "vitb2_mg": 0.034,
+    "vitb3_mg": 0.302,
+    "vitb6_mg": 0.073,
+    "folate_ug": 46.925,
+    "vitc_mg": 3.998,
+    "vite_mg": 29.561,
+    "vitk1_ug": 9.416
+   }
+  },
+  "dal_makhani": {
+   "status": "ok",
+   "note": "",
+   "indb_recipes": [
+    "Dal makhani"
+   ],
+   "serving": {
+    "unit": "bowl",
+    "grams": 353
+   },
+   "per_100g": {
+    "energy_kcal": 74.04,
+    "protein_g": 3.315,
+    "carb_g": 7.959,
+    "fat_g": 3.063,
+    "fibre_g": 2.271,
+    "freesugar_g": 0.798,
+    "calcium_mg": 20.621,
+    "iron_mg": 1.226,
+    "magnesium_mg": 27.392,
+    "phosphorus_mg": 58.309,
+    "potassium_mg": 199.399,
+    "sodium_mg": 41.845,
+    "zinc_mg": 0.479,
+    "vita_ug": 30.846,
+    "vitb1_mg": 0.038,
+    "vitb2_mg": 0.026,
+    "vitb3_mg": 0.367,
+    "vitb6_mg": 0.054,
+    "folate_ug": 21.271,
+    "vitc_mg": 2.6,
+    "vite_mg": 0.109,
+    "vitk1_ug": 6.327
+   }
+  },
+  "dhokla": {
+   "status": "ok",
+   "note": "",
+   "indb_recipes": [
+    "Dhokla"
+   ],
+   "serving": {
+    "unit": "piece",
+    "grams": 40
+   },
+   "per_100g": {
+    "energy_kcal": 216.485,
+    "protein_g": 13.448,
+    "carb_g": 30.684,
+    "fat_g": 5.283,
+    "fibre_g": 4.946,
+    "freesugar_g": 4.781,
+    "calcium_mg": 123.206,
+    "iron_mg": 1.388,
+    "magnesium_mg": 40.507,
+    "phosphorus_mg": 185.942,
+    "potassium_mg": 287.148,
+    "sodium_mg": 376.018,
+    "zinc_mg": 1.054,
+    "vita_ug": 13.139,
+    "vitb1_mg": 0.242,
+    "vitb2_mg": 0.209,
+    "vitb3_mg": 1.014,
+    "vitb6_mg": 0.267,
+    "folate_ug": 99.917,
+    "vitc_mg": 1.706,
+    "vite_mg": 1.846,
+    "vitk1_ug": 6.697
+   }
+  },
+  "fried_rice": {
+   "status": "ok",
+   "note": "",
+   "indb_recipes": [
+    "Chinese fried rice"
+   ],
+   "serving": {
+    "unit": "plate",
+    "grams": 351
+   },
+   "per_100g": {
+    "energy_kcal": 120.584,
+    "protein_g": 4.052,
+    "carb_g": 13.402,
+    "fat_g": 5.435,
+    "fibre_g": 2.313,
+    "freesugar_g": 1.472,
+    "calcium_mg": 34.697,
+    "iron_mg": 0.987,
+    "magnesium_mg": 18.99,
+    "phosphorus_mg": 70.05,
+    "potassium_mg": 210.87,
+    "sodium_mg": 248.361,
+    "zinc_mg": 0.513,
+    "vita_ug": 28.179,
+    "vitb1_mg": 0.062,
+    "vitb2_mg": 0.063,
+    "vitb3_mg": 0.698,
+    "vitb6_mg": 0.183,
+    "folate_ug": 38.947,
+    "vitc_mg": 19.181,
+    "vite_mg": 2.182,
+    "vitk1_ug": 23.24
+   }
+  },
+  "idli": {
+   "status": "ok",
+   "note": "",
+   "indb_recipes": [
+    "Idli"
+   ],
+   "serving": {
+    "unit": "idli",
+    "grams": 25
+   },
+   "per_100g": {
+    "energy_kcal": 137.535,
+    "protein_g": 4.637,
+    "carb_g": 28.178,
+    "fat_g": 0.333,
+    "fibre_g": 2.309,
+    "freesugar_g": 0.284,
+    "calcium_mg": 8.005,
+    "iron_mg": 0.682,
+    "magnesium_mg": 25.442,
+    "phosphorus_mg": 79.304,
+    "potassium_mg": 158.127,
+    "sodium_mg": 100.834,
+    "zinc_mg": 0.623,
+    "vita_ug": 0.0,
+    "vitb1_mg": 0.072,
+    "vitb2_mg": 0.027,
+    "vitb3_mg": 0.927,
+    "vitb6_mg": 0.088,
+    "folate_ug": 11.771,
+    "vitc_mg": 0.0,
+    "vite_mg": 0.044,
+    "vitk1_ug": 1.277
+   }
+  },
+  "jalebi": {
+   "status": "missing",
+   "note": "This dish is not in INDB yet."
+  },
+  "kaathi_rolls": {
+   "status": "ok",
+   "note": "",
+   "indb_recipes": [
+    "Paneer kaathi roll"
+   ],
+   "serving": {
+    "unit": "kaathi roll",
+    "grams": 148
+   },
+   "per_100g": {
+    "energy_kcal": 285.942,
+    "protein_g": 6.916,
+    "carb_g": 20.103,
+    "fat_g": 19.554,
+    "fibre_g": 2.404,
+    "freesugar_g": 3.294,
+    "calcium_mg": 101.662,
+    "iron_mg": 1.417,
+    "magnesium_mg": 29.553,
+    "phosphorus_mg": 131.598,
+    "potassium_mg": 130.5,
+    "sodium_mg": 221.031,
+    "zinc_mg": 1.089,
+    "vita_ug": 16.685,
+    "vitb1_mg": 0.089,
+    "vitb2_mg": 0.072,
+    "vitb3_mg": 0.556,
+    "vitb6_mg": 0.093,
+    "folate_ug": 36.434,
+    "vitc_mg": 12.585,
+    "vite_mg": 8.143,
+    "vitk1_ug": 4.608
+   }
+  },
+  "kadai_paneer": {
+   "status": "ok",
+   "note": "",
+   "indb_recipes": [
+    "Kadhai Paneer"
+   ],
+   "serving": {
+    "unit": "bowl",
+    "grams": 318
+   },
+   "per_100g": {
+    "energy_kcal": 107.992,
+    "protein_g": 4.333,
+    "carb_g": 7.341,
+    "fat_g": 6.807,
+    "fibre_g": 2.067,
+    "freesugar_g": 5.539,
+    "calcium_mg": 91.527,
+    "iron_mg": 0.645,
+    "magnesium_mg": 22.4,
+    "phosphorus_mg": 80.68,
+    "potassium_mg": 290.806,
+    "sodium_mg": 144.33,
+    "zinc_mg": 0.659,
+    "vita_ug": 0.0,
+    "vitb1_mg": 0.156,
+    "vitb2_mg": 0.046,
+    "vitb3_mg": 0.798,
+    "vitb6_mg": 0.116,
+    "folate_ug": 36.814,
+    "vitc_mg": 26.978,
+    "vite_mg": 2.843,
+    "vitk1_ug": 12.014
+   }
+  },
+  "kulfi": {
+   "status": "ok",
+   "note": "",
+   "indb_recipes": [
+    "Kulfi"
+   ],
+   "serving": {
+    "unit": "kulfi",
+    "grams": 270
+   },
+   "per_100g": {
+    "energy_kcal": 98.427,
+    "protein_g": 3.209,
+    "carb_g": 11.303,
+    "fat_g": 4.696,
+    "fibre_g": 0.123,
+    "freesugar_g": 10.387,
+    "calcium_mg": 111.858,
+    "iron_mg": 0.195,
+    "magnesium_mg": 10.627,
+    "phosphorus_mg": 94.041,
+    "potassium_mg": 114.044,
+    "sodium_mg": 23.966,
+    "zinc_mg": 0.348,
+    "vita_ug": 0.0,
+    "vitb1_mg": 0.031,
+    "vitb2_mg": 0.104,
+    "vitb3_mg": 0.106,
+    "vitb6_mg": 0.039,
+    "folate_ug": 6.921,
+    "vitc_mg": 1.866,
+    "vite_mg": 0.466,
+    "vitk1_ug": 0.097
+   }
+  },
+  "masala_dosa": {
+   "status": "ok",
+   "note": "",
+   "indb_recipes": [
+    "Masala dosa"
+   ],
+   "serving": {
+    "unit": "dosa",
+    "grams": 210
+   },
+   "per_100g": {
+    "energy_kcal": 164.585,
+    "protein_g": 3.288,
+    "carb_g": 19.567,
+    "fat_g": 7.84,
+    "fibre_g": 2.523,
+    "freesugar_g": 1.327,
+    "calcium_mg": 15.582,
+    "iron_mg": 0.787,
+    "magnesium_mg": 26.623,
+    "phosphorus_mg": 62.574,
+    "potassium_mg": 271.77,
+    "sodium_mg": 191.278,
+    "zinc_mg": 0.495,
+    "vita_ug": 0.0,
+    "vitb1_mg": 0.064,
+    "vitb2_mg": 0.026,
+    "vitb3_mg": 0.841,
+    "vitb6_mg": 0.093,
+    "folate_ug": 17.054,
+    "vitc_mg": 6.746,
+    "vite_mg": 3.708,
+    "vitk1_ug": 5.958
+   }
+  },
+  "momos": {
+   "status": "missing",
+   "note": "This dish is not in INDB yet."
+  },
+  "paani_puri": {
+   "status": "missing",
+   "note": "This dish is not in INDB yet."
+  },
+  "pakode": {
+   "status": "unreliable",
+   "note": "INDB counts all the frying oil in the recipe, so fat and calories are far too high (Mixed vegetable pakora/pakoda: 72 g fat per 100 g). Numbers are hidden.",
+   "indb_recipes": [
+    "Mixed vegetable pakora/pakoda"
+   ],
+   "serving": {
+    "unit": "plate",
+    "grams": 675
+   },
+   "per_100g": {
+    "energy_kcal": 673.81,
+    "protein_g": 1.939,
+    "carb_g": 5.123,
+    "fat_g": 71.857,
+    "fibre_g": 1.127,
+    "freesugar_g": 0.383,
+    "calcium_mg": 9.549,
+    "iron_mg": 0.456,
+    "magnesium_mg": 9.506,
+    "phosphorus_mg": 21.404,
+    "potassium_mg": 75.242,
+    "sodium_mg": 65.355,
+    "zinc_mg": 0.159,
+    "vita_ug": 0.0,
+    "vitb1_mg": 0.043,
+    "vitb2_mg": 0.019,
+    "vitb3_mg": 0.215,
+    "vitb6_mg": 0.05,
+    "folate_ug": 21.227,
+    "vitc_mg": 3.182,
+    "vite_mg": 35.403,
+    "vitk1_ug": 15.539
+   }
+  },
+  "pav_bhaji": {
+   "status": "ok",
+   "note": "",
+   "indb_recipes": [
+    "Pav bhaji"
+   ],
+   "serving": {
+    "unit": "plate",
+    "grams": 581
+   },
+   "per_100g": {
+    "energy_kcal": 96.525,
+    "protein_g": 2.66,
+    "carb_g": 11.993,
+    "fat_g": 4.318,
+    "fibre_g": 1.98,
+    "freesugar_g": 2.057,
+    "calcium_mg": 24.86,
+    "iron_mg": 0.969,
+    "magnesium_mg": 12.692,
+    "phosphorus_mg": 19.188,
+    "potassium_mg": 139.301,
+    "sodium_mg": 163.894,
+    "zinc_mg": 0.182,
+    "vita_ug": 40.056,
+    "vitb1_mg": 0.212,
+    "vitb2_mg": 0.074,
+    "vitb3_mg": 1.144,
+    "vitb6_mg": 0.057,
+    "folate_ug": 29.335,
+    "vitc_mg": 13.159,
+    "vite_mg": 0.152,
+    "vitk1_ug": 11.627
+   }
+  },
+  "pizza": {
+   "status": "ok",
+   "note": "",
+   "indb_recipes": [
+    "Pizza"
+   ],
+   "serving": {
+    "unit": "slice",
+    "grams": 297
+   },
+   "per_100g": {
+    "energy_kcal": 146.773,
+    "protein_g": 6.849,
+    "carb_g": 9.943,
+    "fat_g": 8.724,
+    "fibre_g": 1.707,
+    "freesugar_g": 1.38,
+    "calcium_mg": 77.231,
+    "iron_mg": 0.665,
+    "magnesium_mg": 18.239,
+    "phosphorus_mg": 95.692,
+    "potassium_mg": 193.906,
+    "sodium_mg": 225.017,
+    "zinc_mg": 0.708,
+    "vita_ug": 21.696,
+    "vitb1_mg": 0.067,
+    "vitb2_mg": 0.138,
+    "vitb3_mg": 1.334,
+    "vitb6_mg": 0.12,
+    "folate_ug": 29.46,
+    "vitc_mg": 14.429,
+    "vite_mg": 1.39,
+    "vitk1_ug": 13.962
+   }
+  },
+  "samosa": {
+   "status": "unreliable",
+   "note": "INDB counts all the frying oil in the recipe, so fat and calories are far too high (Potato samosa (Aloo ka samosa): 59 g fat per 100 g). Numbers are hidden.",
+   "indb_recipes": [
+    "Potato samosa (Aloo ka samosa)"
+   ],
+   "serving": {
+    "unit": "samosa",
+    "grams": 141
+   },
+   "per_100g": {
+    "energy_kcal": 577.386,
+    "protein_g": 1.712,
+    "carb_g": 9.206,
+    "fat_g": 59.191,
+    "fibre_g": 1.192,
+    "freesugar_g": 0.288,
+    "calcium_mg": 7.627,
+    "iron_mg": 0.499,
+    "magnesium_mg": 11.38,
+    "phosphorus_mg": 21.788,
+    "potassium_mg": 137.501,
+    "sodium_mg": 77.1,
+    "zinc_mg": 0.222,
+    "vita_ug": 8.722,
+    "vitb1_mg": 0.047,
+    "vitb2_mg": 0.01,
+    "vitb3_mg": 0.371,
+    "vitb6_mg": 0.045,
+    "folate_ug": 9.08,
+    "vitc_mg": 7.996,
+    "vite_mg": 28.73,
+    "vitk1_ug": 9.097
+   }
+  }
+ }
+}
