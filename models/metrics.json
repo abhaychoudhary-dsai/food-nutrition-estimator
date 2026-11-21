@@ -1,0 +1,60 @@
+{
+  "test_size": 941,
+  "labels": [
+    "burger",
+    "butter_naan",
+    "chai",
+    "chapati",
+    "chole_bhature",
+    "dal_makhani",
+    "dhokla",
+    "fried_rice",
+    "idli",
+    "jalebi",
+    "kaathi_rolls",
+    "kadai_paneer",
+    "kulfi",
+    "masala_dosa",
+    "momos",
+    "paani_puri",
+    "pakode",
+    "pav_bhaji",
+    "pizza",
+    "samosa"
+  ],
+  "test_results": {
+    "Small CNN (from scratch)": {
+      "accuracy": 0.694,
+      "top3_accuracy": 0.884,
+      "macro_f1": 0.673
+    },
+    "EfficientNet-B0 (transfer learning)": {
+      "accuracy": 0.908,
+      "top3_accuracy": 0.961,
+      "macro_f1": 0.907
+    }
+  },
+  "chosen_model": "EfficientNet-B0 (transfer learning)",
+  "per_class_f1": {
+    "burger": 0.952,
+    "butter_naan": 0.876,
+    "chai": 0.956,
+    "chapati": 0.889,
+    "chole_bhature": 0.935,
+    "dal_makhani": 0.895,
+    "dhokla": 0.891,
+    "fried_rice": 0.935,
+    "idli": 0.889,
+    "jalebi": 0.921,
+    "kaathi_rolls": 0.818,
+    "kadai_paneer": 0.912,
+    "kulfi": 0.865,
+    "masala_dosa": 0.968,
+    "momos": 0.948,
+    "paani_puri": 0.947,
+    "pakode": 0.917,
+    "pav_bhaji": 0.857,
+    "pizza": 0.921,
+    "samosa": 0.854
+  }
+}
