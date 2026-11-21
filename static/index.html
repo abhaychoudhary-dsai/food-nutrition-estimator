@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NutriScan · What's on your plate?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap head">
+    <div class="logo"><span class="mark"></span>NutriScan</div>
+    <nav><a href="#about">How it works</a><a href="/docs" target="_blank">API</a><a href="https://github.com/abhaychoudhary-dsai/food-nutrition-estimator" target="_blank">GitHub</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Snap your food. See what's in it.</h1>
+    <p>Upload a photo of an Indian dish. NutriScan recognises it and shows calories, protein, carbs, fat, vitamins and minerals for your portion, using the Indian Nutrient Databank.</p>
+  </section>
+
+  <div class="grid">
+    <section class="card upload">
+      <label id="drop" class="drop">
+        <input type="file" id="file" accept="image/*" capture="environment" hidden>
+        <img id="preview" alt="" class="hidden">
+        <div id="placeholder">
+          <div class="cam"></div>
+          <b>Tap to take or choose a photo</b>
+          <span>or drop an image here · JPG, PNG, WebP · max 8 MB</span>
+        </div>
+      </label>
+      <p class="tip">Works best with one dish in the photo, seen from above or at a slight angle.</p>
+      <details class="list">
+        <summary>Dishes it knows (20)</summary>
+        <div id="dish-list" class="chips"></div>
+      </details>
+    </section>
+
+    <section id="result" class="card result">
+      <div class="empty" id="empty">Your result will appear here.</div>
+      <div id="body" class="hidden">
+        <div class="dish-head">
+          <div><span class="eyebrow">Looks like</span><h2 id="dish-name"></h2></div>
+          <span class="conf" id="conf"></span>
+        </div>
+        <div id="low" class="warn hidden">Not very sure about this one. If it's wrong, pick the right dish below.</div>
+        <div class="alts"><span>Not right?</span><div id="alts" class="chips"></div>
+          <select id="pick"><option value="">Other dish…</option></select></div>
+
+        <div id="no-data" class="info hidden"></div>
+
+        <div id="nutri" class="hidden">
+          <div class="portion">
+            <div><span class="eyebrow">Portion</span><div id="serving-note" class="muted"></div></div>
+            <div class="stepper">
+              <button type="button" id="minus">−</button>
+              <input id="grams" type="number" min="10" max="2000" step="10">
+              <span>g</span>
+              <button type="button" id="plus">+</button>
+            </div>
+          </div>
+          <div class="macros" id="macros"></div>
+          <div class="split"><div id="split-bar" class="split-bar"></div><div id="split-legend" class="split-legend"></div></div>
+          <div class="two">
+            <div><h3>Minerals</h3><table id="minerals"></table></div>
+            <div><h3>Vitamins</h3><table id="vitamins"></table></div>
+          </div>
+          <p class="source" id="source"></p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section id="about" class="about">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div><b>1. Recognise</b><p>An EfficientNet-B0 CNN, pre-trained on ImageNet and fine-tuned on 20 dishes, looks at the photo. It runs as an ONNX model, so the server does not need PyTorch.</p></div>
+      <div><b>2. Look up</b><p>The dish is matched to a recipe in the Indian Nutrient Databank (INDB, 2024): 40+ nutrients per 100 g for 1,014 Indian recipes.</p></div>
+      <div><b>3. Scale</b><p>Values are scaled to your portion. The default is INDB's standard serving, which you can change in grams.</p></div>
+    </div>
+    <table id="scores" class="scores"></table>
+    <div class="limits">
+      <h3>Be aware</h3>
+      <ul>
+        <li>It estimates from a standard recipe. Your home recipe, oil and ghee can change the numbers a lot.</li>
+        <li>For deep-fried dishes (samosa, pakode, bhature, burger) the source data counts all the frying oil, so the numbers are not shown.</li>
+        <li>Jalebi, momos and paani puri are recognised but are not in INDB yet.</li>
+        <li>Only one dish per photo. A full thali will be labelled as just one dish.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">Built by Abhay Kumar Choudhary · PyTorch, ONNX Runtime, FastAPI · Nutrition data: Indian Nutrient Databank</footer>
+<script src="/static/app.js"></script>
+</body>
+</html>
